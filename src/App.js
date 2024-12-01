@@ -27,17 +27,17 @@ function App() {
       <Router>
         <Header onDataSend={handleGetQuery} />
         <Routes>
-          <Route path="/" element={<TextsTop />} />
-          <Route path="/text" element={<TextsTop />} />
-          <Route path="/blog" element={<BlogsTop />} />
-          <Route path='/search' element={<SearchResult />} />
-          <Route path="/html" element={<HTMLTop />} />
-          <Route path="/css" element={<CSSTop />} />
-          <Route path="/javascript" element={<JavaScriptTop />} />
-          <Route path="/sql" element={<SQLTop />} />
-          <Route path="/html/1" element={<HTMLChapter1 />} />
-          <Route path="/html/2" element={<HTMLChapter2 />} />
-          <Route path="/html/3" element={<HTMLChapter3 />} />
+          <Route path="/replace-techblog/" element={<TextsTop />} />
+          <Route path="/replace-techblog/text" element={<TextsTop />} />
+          <Route path="/replace-techblog/blog" element={<BlogsTop />} />
+          <Route path='/replace-techblog/search' element={<SearchResult />} />
+          <Route path="/replace-techblog/html" element={<HTMLTop />} />
+          <Route path="/replace-techblog/css" element={<CSSTop />} />
+          <Route path="/replace-techblog/javascript" element={<JavaScriptTop />} />
+          <Route path="/replace-techblog/sql" element={<SQLTop />} />
+          <Route path="/replace-techblog/html/1" element={<HTMLChapter1 />} />
+          <Route path="/replace-techblog/html/2" element={<HTMLChapter2 />} />
+          <Route path="/replace-techblog/html/3" element={<HTMLChapter3 />} />
         </Routes>
       </Router>
       <Footer />
