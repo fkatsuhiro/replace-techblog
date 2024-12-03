@@ -22,17 +22,16 @@ function Header({ onDataSend }) {
         setSearchParams('');
     }, []);
 
-    // 入力クエリを読み取る
+    // 入力クエリを読み取り、URLを遷移する
     function handleSaveInputQuery (e){
         const inputQuery = e.target.value;
         setSaveQuery(inputQuery);
+        navigate('/replace-techblog/search');
     }
 
     // 入力されたクエリをクエリパラメータに追加する
     function handleAddQueryParam(){
-        //navigate('/search');
         setSearchParams({query: saveQuery});
-        navigate(`/search?query=${(saveQuery)}`);
         onDataSend(saveQuery);
         setSaveQuery('');
     }
@@ -40,12 +39,12 @@ function Header({ onDataSend }) {
     return (
         <Navbar bg="light" data-bs-theme="light" fixed="top">
             <Container>
-                <Navbar.Brand as={Link} to="/text">
+                <Navbar.Brand as={Link} to="replace-techblog/text">
                     <img src={icon} alt="images" style={{ width: '50px' }} />
                 </Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to="/text">Text</Nav.Link>
-                    <Nav.Link as={Link} to="/blogs">Blog</Nav.Link>
+                    <Nav.Link as={Link} to="replace-techblog/text">Text</Nav.Link>
+                    <Nav.Link as={Link} to="replace-techblog/blogs">Blog</Nav.Link>
                 </Nav>
                 <Navbar.Collapse className="justify-content-end" >
                     <Form.Control type="text" placeholder="Search" className='me-3' value={saveQuery} onChange={handleSaveInputQuery} style={{ width: '20%' }} />

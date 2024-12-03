@@ -7,9 +7,9 @@ import '../../../App.css';
 
 function HTMLTop() {
     const HTMLChapter = [
-        { id: 1, title: 'HTMLとは？', description: 'HTMLの概要に関して学習します。' ,imgUrl: '', url: '/html/1' },
-        { id: 2, title: 'HTMLの基本構造', description: 'Webページを表示しているHTMLの基本的な構造を学習します。' ,imgUrl: '', url: '/html/2' },
-        { id: 3, title: '基本的なタグに関して', description: '画面を表示するために必要なタグに関して説明します。',imgUrl: '', url: '/html/3' }
+        { id: 1, title: 'HTMLとは？', description: 'HTMLの概要に関して学習します。' ,imgUrl: '', url: '/replace-techblog/html/1' },
+        { id: 2, title: 'HTMLの基本構造', description: 'Webページを表示しているHTMLの基本的な構造を学習します。' ,imgUrl: '', url: '/replace-techblog/html/2' },
+        { id: 3, title: '基本的なタグに関して', description: '画面を表示するために必要なタグに関して説明します。',imgUrl: '', url: '/replace-techblog/html/3' }
     ];
 
     return (

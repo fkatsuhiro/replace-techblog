@@ -7,10 +7,10 @@ import '../../App.css';
 
 function TextsTop() {
     const TextLanguage = [
-        { id: 1, title: 'HTML', imgUrl: '', url: '/html' },
-        { id: 2, title: 'CSS', imgUrl: '', url: '/css' },
-        { id: 3, title: 'JavaScript', imgUrl: '', url: '/javascript' },
-        { id: 4, title: 'SQL', imgUrl: '', url: '/sql' }
+        { id: 1, title: 'HTML', imgUrl: '', url: '/replace-techblog/html' },
+        { id: 2, title: 'CSS', imgUrl: '', url: '/replace-techblog/css' },
+        { id: 3, title: 'JavaScript', imgUrl: '', url: '/replace-techblog/javascript' },
+        { id: 4, title: 'SQL', imgUrl: '', url: '/replace-techblog/sql' }
     ];
 
     return (
