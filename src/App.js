@@ -46,7 +46,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename="/replace-techblog">
         <Header onDataSend={handleGetQuery} />
         <Routes>
           <Route path="/" element={<TextsTop />} />
