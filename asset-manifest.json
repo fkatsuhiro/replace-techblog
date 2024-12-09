@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/replace-techblog/static/css/main.0fa93f31.css",
-    "main.js": "/replace-techblog/static/js/main.f4db05a2.js",
+    "main.js": "/replace-techblog/static/js/main.4c0b452c.js",
     "static/js/453.8475ffc8.chunk.js": "/replace-techblog/static/js/453.8475ffc8.chunk.js",
     "index.html": "/replace-techblog/index.html",
     "main.0fa93f31.css.map": "/replace-techblog/static/css/main.0fa93f31.css.map",
-    "main.f4db05a2.js.map": "/replace-techblog/static/js/main.f4db05a2.js.map",
+    "main.4c0b452c.js.map": "/replace-techblog/static/js/main.4c0b452c.js.map",
     "453.8475ffc8.chunk.js.map": "/replace-techblog/static/js/453.8475ffc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fa93f31.css",
-    "static/js/main.f4db05a2.js"
+    "static/js/main.4c0b452c.js"
   ]
 }
