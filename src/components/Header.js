@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Header({ onDataSend }) {
-    const [ searchParams, setSearchParams ] = useSearchParams();
+    const [ , setSearchParams ] = useSearchParams();
     const [ saveQuery, setSaveQuery ] = useState('');
     const navigate = useNavigate();
     
@@ -49,7 +49,7 @@ function Header({ onDataSend }) {
         <Navbar bg="white" data-bs-theme="light" fixed="top">
             <Container>
                 <Navbar.Brand as={Link} to="/texts">
-                    <img src="/images/top_logo.png" alt="images" style={{ width: '50px' }} />
+                    <img src="images/top_logo.png" alt="images" style={{ width: '50px' }} />
                 </Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link as={Link} to="/texts">Text</Nav.Link>

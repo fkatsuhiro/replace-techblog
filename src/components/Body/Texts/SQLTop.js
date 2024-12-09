@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import '../../../App.css';
 
 function SQLTop() {
+    const location = useLocation();
     const [SQLTexts, setSQLTexts] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/article_data.json');
+                const response = await fetch('https://fkatsuhiro.github.io/replace-techblog/article_data.json');
                 const textData = await response.json();
                 /* データの取得ができているかログ出力*/
                 console.log("Fetched Data:", textData);
@@ -23,7 +24,7 @@ function SQLTop() {
         }
 
         fetchData();
-    }, []); // 初回レンダリング時のみ実行
+    }, [location.pathname]); // 初回レンダリング時のみ実行
 
     return (
         <div className='bg-light'>

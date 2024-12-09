@@ -9,7 +9,7 @@ function HTMLTop() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/article_data.json');
+                const response = await fetch('https://fkatsuhiro.github.io/replace-techblog/article_data.json');
                 const textData = await response.json();
                 /* データの取得ができているかログ出力*/
                 console.log("Fetched Data:", textData);

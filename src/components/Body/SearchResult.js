@@ -15,9 +15,6 @@ function SearchResult() {
     useEffect(() => {
         /* デプロイ環境用でのfetch */
         fetch('https://fkatsuhiro.github.io/replace-techblog/article_data.json', { method: 'GET' })
-
-        /* ローカル環境用でのfetch */
-        //fetch('/article_data.json', { method: 'GET' })
             .then(res => res.json())
             .then(data => {
                 setResults(data);
