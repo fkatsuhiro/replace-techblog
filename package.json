@@ -1,6 +1,7 @@
 {
   "name": "replace-webtext",
   "version": "0.1.0",
+  "homepage": "https://fkatsuhiro.github.io/replace-techblog",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
