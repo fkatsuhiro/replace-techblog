@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/replace-techblog/static/css/main.f3e75e75.css",
-    "main.js": "/replace-techblog/static/js/main.2b504b68.js",
-    "static/js/453.8475ffc8.chunk.js": "/replace-techblog/static/js/453.8475ffc8.chunk.js",
-    "static/media/top_logo.png": "/replace-techblog/static/media/top_logo.1d4dde3c0ed547352625.png",
-    "index.html": "/replace-techblog/index.html",
-    "main.f3e75e75.css.map": "/replace-techblog/static/css/main.f3e75e75.css.map",
-    "main.2b504b68.js.map": "/replace-techblog/static/js/main.2b504b68.js.map",
-    "453.8475ffc8.chunk.js.map": "/replace-techblog/static/js/453.8475ffc8.chunk.js.map"
+    "main.css": "/static/css/main.ea178ece.css",
+    "main.js": "/static/js/main.98eeae4d.js",
+    "static/js/453.8475ffc8.chunk.js": "/static/js/453.8475ffc8.chunk.js",
+    "index.html": "/index.html",
+    "main.ea178ece.css.map": "/static/css/main.ea178ece.css.map",
+    "main.98eeae4d.js.map": "/static/js/main.98eeae4d.js.map",
+    "453.8475ffc8.chunk.js.map": "/static/js/453.8475ffc8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3e75e75.css",
-    "static/js/main.2b504b68.js"
+    "static/css/main.ea178ece.css",
+    "static/js/main.98eeae4d.js"
   ]
 }
