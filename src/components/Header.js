@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import icon from '../images/top_logo.png';
+//import icon from '../images/top_logo.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,7 +26,7 @@ function Header({ onDataSend }) {
     function handleSaveInputQuery (e){
         const inputQuery = e.target.value;
         setSaveQuery(inputQuery);
-        navigate('/replace-techblog/search');
+        navigate('/search');
     }
 
     // 入力されたクエリをクエリパラメータに追加する
@@ -36,18 +36,27 @@ function Header({ onDataSend }) {
         setSaveQuery('');
     }
 
+    // エンターキーがクリックされたタイミングで処理を走らせる
+    function clickEnter (e){
+        if (e.key === 'Enter'){
+            console.log('Click Enter Key');
+            e.preventDefault();
+            handleAddQueryParam();
+        }
+    }
+
     return (
-        <Navbar bg="light" data-bs-theme="light" fixed="top">
+        <Navbar bg="white" data-bs-theme="light" fixed="top">
             <Container>
-                <Navbar.Brand as={Link} to="replace-techblog/text">
-                    <img src={icon} alt="images" style={{ width: '50px' }} />
+                <Navbar.Brand as={Link} to="/texts">
+                    <img src="/images/top_logo.png" alt="images" style={{ width: '50px' }} />
                 </Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to="replace-techblog/text">Text</Nav.Link>
-                    <Nav.Link as={Link} to="replace-techblog/blogs">Blog</Nav.Link>
+                    <Nav.Link as={Link} to="/texts">Text</Nav.Link>
+                    <Nav.Link as={Link} to="/blogs">Blog</Nav.Link>
                 </Nav>
                 <Navbar.Collapse className="justify-content-end" >
-                    <Form.Control type="text" placeholder="Search" className='me-3' value={saveQuery} onChange={handleSaveInputQuery} style={{ width: '20%' }} />
+                    <Form.Control onKeyDown={clickEnter} type="text" placeholder="Search" className='me-3' value={saveQuery} onChange={handleSaveInputQuery} style={{ width: '20%' }} />
                     <Button variant="secondary" onClick={handleAddQueryParam}>Search</Button>
                 </Navbar.Collapse>
             </Container>

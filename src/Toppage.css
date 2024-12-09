@@ -1,0 +1,46 @@
+.course-list-title {
+    padding: 20px 0 10px 30px;
+
+}
+
+.course-list {
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.course-item {
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.course-inner-item {
+    padding: 20px 0;
+}
+
+.course-component-sidespace {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none
+}
+
+.course-image {
+    width: 200px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.course-title {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
