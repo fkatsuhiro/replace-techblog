@@ -1,37 +1,49 @@
-.article{
+.article {
     font-size: 1rem;
     text-align: left;
     margin: 3rem;
 }
-.arround-article{
+
+.arround-article {
     border-radius: 15px;
 }
-.title{
+
+.title {
     text-align: center;
     padding: 1em 0;
 }
+
 .sub-title {
     text-align: left;
     padding: 10px 0;
-    text-decoration:underline;
+    text-decoration: underline;
     text-decoration-color: #90ee90;
 }
-.page-width{
+
+.page-width {
     width: 85%;
     margin: 0 auto;
 }
-.outside-article{
+
+.outside-article {
     padding: 50px 0;
 }
+
+.image-width {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /*code block*/
 .code-block {
-    background-color:black;
+    background-color: black;
     padding: 15px 10px;
     border-radius: 5px;
     overflow-x: auto;
     width: 95%;
     margin: 3rem auto;
 }
+
 .code-block code {
     font-family: 'Courier New', Courier, monospace;
     /*white-space: pre;*/

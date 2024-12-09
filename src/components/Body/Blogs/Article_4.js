@@ -4,12 +4,12 @@ import './../../../Article.css';
 function Article_4() {
     return (
         <div className="bg-body-tertiary">
-            <div className="page-width outside-article">
+            <div className="page-width outside-article" style={{ paddingTop: '100px' }}>
                 <div className="row">
                     <div className="bg-white col-md-8 arround-article">
                         <div className="article">
-                            <h5 style={{ fontWeight: 'bold', padding: '2rem 0' }}></h5>
-                            <h3 className="title">Reactで作成したWebページをGithubPagesで公開する方法</h3>
+                            <h5 style={{ fontWeight: 'bold', paddingTop: '2rem' }}></h5>
+                            <h3 className="title">gh-pagesを用いて作成したWebページをGithubPagesで公開する方法</h3>
                             <p>今回はReactで作成したWebページを無料のサービスであるGitHubPagesで公開するための方法を記載していきたいと思います。前提として、ReactでWebサービスが作成されていることが前提です。</p>
 
                             <h4 className="sub-title">初回デプロイの手順</h4>
@@ -21,17 +21,17 @@ function Article_4() {
                             <p>これでローカルでアプリケーションが正しく動作していることを確認します。</p>
 
                             <h6 className="sub-title">homepage の設定</h6>
-                            <p>プロジェクトの `package.json` に以下を追加します。`https://ユーザー名.github.io/リポジトリ名/` の形式で、GitHub Pagesで公開されるURLを指定します。</p>
+                            <p>プロジェクトの <code>package.json</code> に以下を追加します。 <code>https://ユーザー名.github.io/リポジトリ名/</code> の形式で、GitHub Pagesで公開されるURLを指定します。</p>
                             <pre className="code-block">
                                 <code>
-                                    {{
-                                        homepage: "https://ユーザー名.github.io/リポジトリ名"
-                                    }}
+                                    {`{
+  "homepage": "https://ユーザー名.github.io/リポジトリ名"
+}`}
                                 </code>
                             </pre>
 
                             <h6 className="sub-title">gh-pages パッケージのインストール</h6>
-                            <p>GitHub Pagesにデプロイするための `gh-pages` パッケージをインストールします。</p>
+                            <p>GitHub Pagesにデプロイするための <code>gh-pages</code> パッケージをインストールします。</p>
                             <pre className="code-block">
                                 <code>npm install gh-pages --save-dev</code>
                             </pre>
@@ -40,17 +40,17 @@ function Article_4() {
                             <p>package.json に以下のデプロイスクリプトを追加します。</p>
                             <pre className="code-block">
                                 <code>
-                                    {{
-                                        scripts: {
-                                            predeploy: "npm run build",
-                                            deploy: "gh-pages -d build"
-                                        }
-                                    }}
+                                    {`{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}`}
                                 </code>
                             </pre>
 
                             <h6 className="sub-title">GitHub リポジトリの作成</h6>
-                            <p>GitHubに新しいリポジトリを作成します。リポジトリの名前は `package.json` で設定したhomepageのURLと一致させてください。</p>
+                            <p>GitHubに新しいリポジトリを作成します。リポジトリの名前は <code>package.json</code> で設定したhomepageのURLと一致させてください。</p>
 
                             <h6 className="sub-title">初回デプロイ</h6>
                             <p>以下のコマンドを実行して、プロジェクトをGitHub Pagesにデプロイします。</p>
@@ -66,7 +66,7 @@ function Article_4() {
                             <p>まず、ローカルでの変更をGitにコミットします。</p>
                             <pre className="code-block">
                                 <code>
-                                    git add -A
+                                    git add -A<br />
                                     git commit -m "Update message"
                                 </code>
                             </pre>
@@ -80,14 +80,14 @@ function Article_4() {
 
                             <h4 className="sub-title">補足情報</h4>
                             <ul>
-                                <li>GitHub Pagesのデフォルトのブランチは `gh-pages` です。このブランチを使用してサイトが公開されます。</li>
-                                <li>公開されたサイトは通常 `https://ユーザー名.github.io/リポジトリ名/` のURLでアクセス可能です。</li>
+                                <li>GitHub Pagesのデフォルトのブランチは <code>gh-pages</code> です。このブランチを使用してサイトが公開されます。</li>
+                                <li>公開されたサイトは通常 <code>https://ユーザー名.github.io/リポジトリ名/</code> のURLでアクセス可能です。</li>
                             </ul>
                             <p>これで、ReactプロジェクトのGitHub Pagesへの公開と、ソースコード修正後の再デプロイが完了します。</p>
                         </div>
                     </div>
                     <div className="col-md-4">
-                        {/* 広告埋め込みようスペース現在はまだ埋め込まない、、 */}
+                        {/* 広告埋め込み用スペース */}
                     </div>
                 </div>
             </div>

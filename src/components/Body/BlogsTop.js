@@ -53,7 +53,7 @@ function BlogsTop() {
                                     alt="result image"
                                     className="course-image course-inner-item"
                                 />
-                                <h4 className="course-title">{BlogItem.title}</h4>
+                                <h6 className="course-title">{BlogItem.title}</h6>
                             </Link>
                         </div>
                     )

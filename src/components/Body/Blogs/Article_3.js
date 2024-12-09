@@ -4,13 +4,12 @@ import './../../../Article.css';
 function Article_3() {
     return (
         <div className="bg-body-tertiary">
-            <div className="page-width outside-article">
+            <div className="page-width outside-article" style={{paddingTop: '100px'}}>
                 <div className="row">
                     <div className="bg-white col-md-8 arround-article">
                         <div className="article">
-                            <h5 style={{ fontWeight: "bold", padding: "2rem 0" }}></h5>
-                            <h3 className="sub-title">開発でよく使うGitコマンド</h3>
-                            <h4 className="sub-title">開発でよく使うGitコマンド</h4>
+                            <h5 style={{ fontWeight: "bold", paddingTop: "2rem" }}></h5>
+                            <h3 className="title">開発でよく使うGitコマンド</h3>
                             <p>
                                 開発(チーム開発など全般)で主に使用するコマンドをまとめたいと思います。
                                 前提として、Githubとの各種連携は住んでいることを前提にお話しさせていただきます。
@@ -81,6 +80,7 @@ function Article_3() {
                                 git branchコマンドで、現在のリモートブランチとほかになんのブランチが切ってあるかを確認することができます。
                             </p>
                             <p>これらのコマンドは開発の際に頻繁に使用するので、しっかり理解して使えるようになりましょう！</p>
+                            <p>今回の内容はここまでです。少しはお役に立てる内容がありましたでしょうか？次回以降もまた有益な内容をどんどん配信していきたいと思いますので、楽しみにしていてくださいね！</p>
                         </div>
                     </div>
                     <div className="col-md-4">

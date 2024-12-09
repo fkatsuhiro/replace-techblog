@@ -36,7 +36,7 @@ function SearchResult() {
         <div className="bg-light">
             {filteredResults.length > 0 &&
                 <div>
-                    <p style={{ paddingTop: '100px', paddingBottom: '50px', width: '90%', margin: 'auto', fontSize: '1.4rem', fontWeight: 'bold' }}>{query}の検索結果</p>
+                    <p style={{ paddingTop: '100px', paddingBottom: '30px', width: '85%', margin: 'auto', fontSize: '1.3rem', fontWeight: 'bold' }}>{query}の検索結果</p>
                     <div className='row' style={{ width: '85%', margin: '0 auto' }} >
                         {filteredResults.map((filteredResultItem) => {
                             return (
@@ -47,7 +47,7 @@ function SearchResult() {
                                             alt="result image"
                                             className="course-image course-inner-item"
                                         />
-                                        <h4 className="course-title">{filteredResultItem.title}</h4>
+                                        <h6 className="course-title">{filteredResultItem.title}</h6>
                                     </Link>
                                 </div>
                             )
@@ -55,7 +55,7 @@ function SearchResult() {
                     </div>
                 </div>
             }
-            {filteredResults.length === 0 && <h4 style={{ paddingTop: '100px' }}>検索結果がありません。</h4>}
+            {filteredResults.length === 0 && <h6 style={{ paddingTop: '100px' }}>検索結果がありません。</h6>}
         </div>
     );
 }

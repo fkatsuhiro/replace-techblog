@@ -39,7 +39,7 @@ function TextsTop() {
                                     alt="result image"
                                     className="course-image course-inner-item"
                                 />
-                                <h4 className="course-title">{TextLanguageItem.title}</h4>
+                                <h5 className="course-title">{TextLanguageItem.title}</h5>
                             </Link>
                         </div>
                     )

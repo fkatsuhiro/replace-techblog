@@ -4,11 +4,11 @@ import './../../../Article.css';
 function Article_2() {
     return (
         <div className="bg-body-tertiary">
-            <div className="page-width outside-article">
+            <div className="page-width outside-article" style={{paddingTop: '100px'}}>
                 <div className="row">
                     <div className="bg-white col-md-8 arround-article">
                         <div className="article">
-                            <h5 style={{ fontWeight: "bold", padding: "2rem 0" }}></h5>
+                            <h5 style={{ fontWeight: "bold", paddingTop: "2rem" }}></h5>
                             <h3 className="title">Bootstrapのcolって何？</h3>
                             <h4 className="sub-title">Bootstrapのcol</h4>
                             <p>
