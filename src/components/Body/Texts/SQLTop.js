@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../../../App.css';
 
@@ -23,7 +23,7 @@ function SQLTop() {
         }
 
         fetchData();
-    }, [location.pathname]); // 初回レンダリング時のみ実行
+    }, []); // 初回レンダリング時のみ実行
 
     return (
         <div className='bg-light'>
