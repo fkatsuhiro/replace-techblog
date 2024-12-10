@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../../../App.css';
 
 function SQLTop() {
-    const location = useLocation();
+    const [SQLTexts, setSQLTexts] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
