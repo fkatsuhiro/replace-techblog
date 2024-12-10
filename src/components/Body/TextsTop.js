@@ -4,10 +4,10 @@ import '../../Toppage.css';
 
 function TextsTop() {
     const TextLanguage = [
-        { id: 1, title: 'HTML', imgUrl: './images/course_image/undraw_html.png', url: '/texts/html' },
-        { id: 2, title: 'CSS', imgUrl: './images/course_image/undraw_css.png', url: '/texts/css' },
-        { id: 3, title: 'JavaScript', imgUrl: './images/course_image/undraw_javascript.png', url: '/texts/javascript' },
-        { id: 4, title: 'SQL', imgUrl: './images/course_image/undraw_sql.png', url: '/texts/sql' }
+        { id: 1, title: 'HTML', imgUrl: '/replace-techblog/images/course_image/undraw_html.png', url: '/texts/html' },
+        { id: 2, title: 'CSS', imgUrl: '/replace-techblog/images/course_image/undraw_css.png', url: '/texts/css' },
+        { id: 3, title: 'JavaScript', imgUrl: '/replace-techblog/images/course_image/undraw_javascript.png', url: '/texts/javascript' },
+        { id: 4, title: 'SQL', imgUrl: '/replace-techblog/images/course_image/undraw_sql.png', url: '/texts/sql' }
     ];
 
     return (
