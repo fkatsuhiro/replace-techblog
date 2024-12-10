@@ -4,7 +4,7 @@ import './../../../../Article.css';
 function HTMLChapter2() {
     return (
         <div className="bg-body-tertiary">
-            <div className="page-width outside-article">
+            <div className="page-width outside-article" style={{paddingTop: '100px'}}>
                 <div className="row">
                     <div className="bg-white col-md-8 arround-article">
                         <div className="article">

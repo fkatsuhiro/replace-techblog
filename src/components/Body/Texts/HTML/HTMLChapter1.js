@@ -3,8 +3,8 @@ import './../../../../Article.css';
 
 function HTMLChapter1() {
     return (
-        <div className='bg-light' style={{paddingTop: '100px'}}>
-            <div className="page-width outside-article">
+        <div className='bg-light'>
+            <div className="page-width outside-article" style={{paddingTop: '100px'}}>
                 <div className="row">
                     <div className="bg-white col-md-8 arround-article">
                         <div className="article">
