@@ -42,7 +42,7 @@ function Article_2() {
                                 </code>
                             </pre>
                             <img
-                                src="/images/blog_image/bootstrap-col-7to5.png"
+                                src="/replace-techblog/images/blog_image/bootstrap-col-7to5.png"
                                 alt="Course image"
                                 className="image-width"
                             />
@@ -82,7 +82,7 @@ function Article_2() {
                                 これを開発者ツールで画面幅を768px以下にして検証してみるとこのようになります。
                             </p>
                             <img
-                                src="/images/blog_image/bootstrap-col-md-7to5.png"
+                                src="/replace-techblog/images/blog_image/bootstrap-col-md-7to5.png"
                                 alt="Course image"
                                 className="image-width"
                             />

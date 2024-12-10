@@ -17,7 +17,7 @@ function SQLChapter1() {
                                 データベースはテーブルというものを用いて管理します。テーブルの縦の列をカラム、横の列をレコードといいます。テーブルは必要なデータに応じで作成する必要があり、設計の際には使いやすさなども考えて作成しないといけないため、その際は別途学習が必要になります。下の図は、テーブルのイメージ図です。赤の縦ラインで協調されたものが、カラムになります。
                             </p>
                             <img
-                                src={'/images/DBTableImage.png'}
+                                src={'/replace-techblog/images/DBTableImage.png'}
                                 alt="Table image"
                                 style={{ width: "80%", margin: "0 auto" }}
                             />

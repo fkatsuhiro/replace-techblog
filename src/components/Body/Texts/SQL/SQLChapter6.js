@@ -46,9 +46,9 @@ function SQLChapter6() {
                                 サイト側の契約体系を表すテーブルをcontractsテーブル、契約ユーザーのテーブルをusersテーブルとします。
                             </p>
                             <h6 className="sub-title">contractsテーブル</h6>
-                            <img style={{ width: "30%" }} src="/images/sql_image/sql_chapter_6_1.png" alt="Contracts Table" />
+                            <img style={{ width: "30%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_1.png" alt="Contracts Table" />
                             <h6 className="sub-title">usersテーブル</h6>
-                            <img style={{ width: "90%" }} src="/images/sql_image/sql_chapter_6_2.png" alt="Users Table" />
+                            <img style={{ width: "90%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_2.png" alt="Users Table" />
                             <p className="sub-title">
                                 この二つのテーブルをLEFT JOINで結合する際のコードは以下のようになります。
                             </p>
@@ -58,7 +58,7 @@ function SQLChapter6() {
                                 </code>
                             </pre>
                             <h6 className="sub-title">結合後のテーブル</h6>
-                            <img style={{ width: "100%" }} src="/images/sql_image/sql_chapter_6_3.png" alt="Left Join Result" />
+                            <img style={{ width: "100%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_3.png" alt="Left Join Result" />
                             <p className="sub-title">
                                 このSQLの処理では、テーブル1の内容はすべて表示し、テーブル2のデータで、テーブル1のidで存在しないものはNULLとして表示します。
                                 この結合方法がLEFT JOINになります。
@@ -73,9 +73,9 @@ function SQLChapter6() {
                             </p>
                             <p>LEFT JOINと同じようなシチュエーションを考えます。</p>
                             <p className="sub-title">この時、contractsテーブルは以下の通りです。</p>
-                            <img style={{ width: "30%" }} src="/images/sql_image/sql_chapter_6_1.png" alt="Contracts Table" />
+                            <img style={{ width: "30%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_1.png" alt="Contracts Table" />
                             <p className="sub-title">usersテーブルはこのような状態である場合を考えます。</p>
-                            <img style={{ width: "90%" }} src="/images/sql_image/sql_chapter_6_4.png" alt="Users Table" />
+                            <img style={{ width: "90%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_4.png" alt="Users Table" />
                             <p className="sub-title">この時、先ほどのLEFT JOINの時と同様にINNER JOINで実装します。</p>
                             <pre className="code-block">
                                 <code>
@@ -83,7 +83,7 @@ function SQLChapter6() {
                                 </code>
                             </pre>
                             <p className="sub-title">この処理の結果得られるテーブルは以下の通りです。</p>
-                            <img style={{ width: "100%" }} src="/images/sql_image/sql_chapter_6_4.png" alt="Inner Join Result" />
+                            <img style={{ width: "100%" }} src="/replace-techblog/images/sql_image/sql_chapter_6_4.png" alt="Inner Join Result" />
                             <p className="sub-title">以上がINNER JOINの主な特徴です。</p>
                             <p>
                                 ほかにもJOINの仕方はたくさんありますが、基本的なJOIN, LEFT JOIN, INNER JOINの基本知識があれば特に難しいということはありません。
